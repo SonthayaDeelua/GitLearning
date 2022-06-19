@@ -171,3 +171,11 @@ When we create new branch, All file from Master will show in new branch also
 
 36. git reset --hard origin/main        When we want to reset to be the same as we are at github now (same as latest version on github)
 
+37. Fork  is the way to copy other people's repo to be our own repo (For studying purpose :)
+
+38. Pull request : When we fork some github repo and we develop some good thing and want orignal repo to be updated same as our repo
+    We will do "pull request" to submit our version to all contributor in that Original Repo to review and accept. If everybody agree and will do pull request
+
+39. Set up our repo to be website or git page
+     39.1  create new repo with this name rule  :  SonthayaDeelua.github.io
+     When we clone it to our local , then we can create out website under github server. but space is limited
