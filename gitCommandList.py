@@ -162,5 +162,8 @@ When we create new branch, All file from Master will show in new branch also
     git add
     git commit -m "massage"
     git push -u origin main  (New version of github change from master to be main)
+
+34. When we edit file we also can use 
+    git commit -am "massege"       -am mean add all and commit use when want to short cut without git add
     
     
