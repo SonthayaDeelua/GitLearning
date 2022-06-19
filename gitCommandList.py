@@ -166,4 +166,7 @@ When we create new branch, All file from Master will show in new branch also
 34. When we edit file we also can use 
     git commit -am "massege"       -am mean add all and commit use when want to short cut without git add
     
-    
+35. git reset --hard c10047a63a2482db4b770440ed2732c063161e58       when we want to reset back to that version of our commit
+
+36. git reset --hard origin/main        When we want to reset to be the same as we are at github now (same as latest version on github)
+
