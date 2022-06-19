@@ -25,6 +25,8 @@
 6.1 if we want to exclude any file in repo from commit . we will create .gitignore file and put all file name that we want to exclude and also *.log to exclude all log file
 
 7. git add gitLearn.md                              will add gitLearn.md file into staging area
+   if file name has space like git learn. 
+   git add "git learn"      we can use double qoute 
 
 8. After git add if we have any update or edit in the file we can use "git diff" it will show differnce between "working directory" and "staging area"
 
