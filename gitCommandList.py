@@ -103,6 +103,7 @@
      * workingBr
 
 19. git checkout -b branchname      if we want to create new branch and work with it immediately
+    (Another way of crate new branch name by using git checkout instead of git branch "branch name"
 
 When we create new branch, All file from Master will show in new branch also
 
