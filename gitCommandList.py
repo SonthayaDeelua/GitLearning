@@ -179,3 +179,13 @@ When we create new branch, All file from Master will show in new branch also
 39. Set up our repo to be website or git page
      39.1  create new repo with this name rule  :  SonthayaDeelua.github.io
      When we clone it to our local , then we can create out website under github server. but space is limited
+
+40. git help config  / git config --help     Will go the help if need  
+
+41. For those local repo that have not been connected to github yet we can use this command to connect to github
+    git config --global user.username + our github username
+
+42. Then link our remot repository from github by
+    git remote add  origin + our SSH link from github
+
+43. We can use git push to push repo to remote
