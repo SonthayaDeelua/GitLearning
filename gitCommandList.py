@@ -56,6 +56,7 @@
                 * c4a083c (HEAD -> master) my first commit
                 * cbb5e73 add other local repo
                 * 8bee080 (origin/master) Testlocalrepo
+        git log --pretty=oneline        will show only one line per log
 
 
 10.   git status      check status of working directory and staging area. Sometime we add new line into working directory but has not do "git add" yet
@@ -185,7 +186,45 @@ When we create new branch, All file from Master will show in new branch also
 41. For those local repo that have not been connected to github yet we can use this command to connect to github
     git config --global user.username + our github username
 
-42. Then link our remot repository from github by
+42. In case we already created some file in out local and already do git add and git commit but not yet connect to remote /git hub
+    First : create repo in the hub with same repo name as local repo
+    Then link our remot repository from github by
     git remote add  origin + our SSH link from github
+    to check if it connect correctly
+    git remote -v  will show remote address both fetch and push
+        origin  git@github.com:SonthayaDeelua/TE-Module-2.git (fetch)
+        origin  git@github.com:SonthayaDeelua/TE-Module-2.git (push)
+
 
 43. We can use git push to push repo to remote
+44. To create file via gitbash
+    touch filename.filetype  for example touch  workspace.txt
+45. To open above txt file via notepad
+    notepad master.txt
+46. ls -ltr     will show more file detail inside repo
+
+47. if we already have 5 commit but we want to get back to commit 3 to re-write or add something but we still want to keep commit 4-5 to be the same
+    git reset --soft + commit 3 id (longgggg)
+
+    latest commit number will be commit3 , commit 4-5 history will be disappear but what changed in commit 4-5 stil be there.
+    This is when do it in local only. 
+48. If we already push 5 commit to remote server but we want to delete commit3 out from history
+    The logic to do that is, we use
+    git revert   + commit3 ID  (revert can do one commit at a time)
+
+    git will create commit6 to remove commit3 but commit3 still show in the history
+
+49. Normally we work with branch at local level only and delete after we already merge into master
+    BUT if we want to push that minor branch into remote server also we can use
+    git push -u origin + minor branch name
+
+    And once we already merge it into master Branch in local and we push the master to remote server already and we want to delete branch at remote server
+    git push origin --delete minor branch name
+
+    git branch -av , git branch -v      list all git branch
+    git branch -D + branch name         Delete branch
+
+
+
+
+    
