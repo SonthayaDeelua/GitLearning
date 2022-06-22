@@ -224,7 +224,14 @@ When we create new branch, All file from Master will show in new branch also
     git branch -av , git branch -v      list all git branch
     git branch -D + branch name         Delete branch
 
+50. git log --merge     Producing list of commits that are causing the conflict
+51. git reset --mixed   to undo the change to the working directory and staging area
+52. git merge --abort   exiting merge process and return back to the state before the merging begun
 
+53. When we have merge conflict
+    git pull --rebase origin main/master    will show detail where conflict happend
+
+    git mergetool           will open vi command and show detail in file where difference, Once we do manual fix we save by type "wq" to save the final file
 
 
     
